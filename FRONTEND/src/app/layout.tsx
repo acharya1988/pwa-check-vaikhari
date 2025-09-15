@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   description: 'Modern Saraswati Sabha',
 };
 
+// Force dynamic rendering across the app to avoid build-time DB connections
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default function RootLayout({
   children,
 }: {
