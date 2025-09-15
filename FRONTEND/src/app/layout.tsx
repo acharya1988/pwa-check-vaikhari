@@ -7,6 +7,7 @@ import { AuthProvider } from '@/components/auth/auth-provider';
 import { ThemeProvider } from '@/components/theme-provider';
 import { TestDbButton } from '@/components/testdb';
 import OverflowInspector from '@/dev/OverflowInspector';
+import SWRegister from '@/components/pwa/sw-register';
 
 
 export const metadata: Metadata = {
@@ -53,6 +54,7 @@ export default function RootLayout({
                 <Toaster />
             </AuthProvider>
         </ThemeProvider>
+        <SWRegister />
       </body>
     </html>
   );
