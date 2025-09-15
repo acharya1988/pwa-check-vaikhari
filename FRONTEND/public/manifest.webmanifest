@@ -21,7 +21,7 @@
   ],
   "iarc_rating_id": "IARC-PLACEHOLDER-UPDATE",
   "scope_extensions": [
-    { "origin": "https://vaikhari.app" }
+    { "origin": "https://pwa-check-vaikhari-frontend.vercel.app/" }
   ],
   "icons": [
     { "src": "/icons/android-launchericon-48-48.png", "sizes": "48x48", "type": "image/png" },
