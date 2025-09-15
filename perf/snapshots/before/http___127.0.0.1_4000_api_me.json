@@ -1,0 +1,44 @@
+{
+  "cold": {
+    "url": "http://127.0.0.1:4000/api/me",
+    "status": 401,
+    "headers": {
+      "access-control-allow-credentials": "true",
+      "access-control-allow-headers": "Content-Type, Authorization",
+      "access-control-allow-methods": "GET,POST,PUT,PATCH,DELETE,OPTIONS",
+      "access-control-allow-origin": "http://localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "27",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Sat, 06 Sep 2025 08:27:36 GMT",
+      "keep-alive": "timeout=5",
+      "vary": "Origin"
+    },
+    "bytes": 27,
+    "ms": 28,
+    "body": {
+      "error": "UNAUTHENTICATED"
+    }
+  },
+  "warm": {
+    "url": "http://127.0.0.1:4000/api/me",
+    "status": 401,
+    "headers": {
+      "access-control-allow-credentials": "true",
+      "access-control-allow-headers": "Content-Type, Authorization",
+      "access-control-allow-methods": "GET,POST,PUT,PATCH,DELETE,OPTIONS",
+      "access-control-allow-origin": "http://localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "27",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Sat, 06 Sep 2025 08:27:36 GMT",
+      "keep-alive": "timeout=5",
+      "vary": "Origin"
+    },
+    "bytes": 27,
+    "ms": 2,
+    "body": {
+      "error": "UNAUTHENTICATED"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+/* Avoid Tailwind layer requirement by defining plain classes.
+   These classnames are unique and non-conflicting. */
+.u-ox { overflow-x: auto; }
+.u-oy { overflow-y: auto; }
+.u-ovs { overscroll-behavior: contain; }
+.u-minw0 { min-width: 0; }
+.u-minh0 { min-height: 0; }
+.u-maxw100 { max-width: 100%; }

@@ -1,0 +1,10 @@
+import { Router } from 'express';
+import { mongo } from '../config/db.js';
+import * as ctrl from '../controller/drifts.controller.js';
+const router = Router();
+router.get('/', async (req, res) => { await mongo(); return ctrl.list(req, res); });
+router.post('/', async (req, res) => { await mongo(); return ctrl.create(req, res); });
+router.get('/:id', async (req, res) => { await mongo(); return ctrl.get(req, res); });
+router.patch('/:id', async (req, res) => { await mongo(); return ctrl.patch(req, res); });
+router.delete('/:id', async (req, res) => { await mongo(); return ctrl.remove(req, res); });
+export default router;

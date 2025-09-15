@@ -1,0 +1,122 @@
+rules_version = '2';
+service cloud.firestore {
+    match /databases/{database}/documents {
+
+          // --- your existing helpers ---
+              function isSignedIn() { return request.auth != null; }
+                  function isUser(userId) { return request.auth.uid == userId; }
+                      function isSuperAdmin() { return request.auth.token.email == 'acharyamahanidhi@gmail.com'; }
+                          function getCircle(circleId) { return get(/databases/$(database)/documents/circles/$(circleId)); }
+                              function isCircleMember(circleId) {
+                                      let circle = getCircle(circleId).data;
+                                            return isSignedIn() && circle.members.exists(member, member.userId == request.auth.uid);
+                              }
+                                  function isCircleAdmin(circleId) {
+                                          let circle = getCircle(circleId).data;
+                                                return isSignedIn() && circle.members.exists(member, member.userId == request.auth.uid && member.role == 'admin');
+                                  }
+
+                                      // --- your existing matches (unchanged) ---
+                                          match /test/{docId} { allow read, write: if true; }
+
+                                              match /users/{userId} {
+                                                      allow read: if true; // public profiles (your current choice)
+                                                            allow create: if isUser(userId);
+                                                                  allow update, delete: if isUser(userId) || isSuperAdmin();
+
+                                                                        match /bookmarks/{bookmarkId} { allow read, write, delete: if isUser(userId); }
+                                                                              match /notifications/{notificationId} { allow read, write, delete: if isUser(userId); }
+                                              }
+
+                                                  match /books/{bookId} {
+                                                          allow list: if isSignedIn();
+                                                                allow get: if resource.data.visibility == 'public' 
+                                                                               || (resource.data.visibility == 'private' && isUser(resource.data.ownerId))
+                                                                                              || (resource.data.visibility == 'circle' && isCircleMember(resource.data.circleIds[0]));
+                                                                                                    allow create: if isSignedIn();
+                                                                                                          allow update, delete: if isUser(resource.data.ownerId) || isSuperAdmin();
+                                                  }
+
+                                                      match /book_content/{bookId} {
+                                                              allow get, list: if get(/databases/$(database)/documents/books/$(bookId)).data.visibility == 'public' 
+                                                                                   || (get(/databases/$(database)/documents/books/$(bookId)).data.visibility == 'private' && isUser(get(/databases/$(database)/documents/books/$(bookId)).data.ownerId))
+                                                                                                        || (get(/databases/$(database)/documents/books/$(bookId)).data.visibility == 'circle' && isCircleMember(get(/databases/$(database)/documents/books/$(bookId)).data.circleIds[0]));
+                                                                                                              allow write: if isUser(get(/databases/$(database)/documents/books/$(bookId)).data.ownerId) || isSuperAdmin();
+                                                      }
+
+                                                          match /posts/{postId} {
+                                                                  allow read: if true;
+                                                                        allow create: if isUser(request.resource.data.author.id);
+                                                                              allow update, delete: if isUser(resource.data.author.id) || isSuperAdmin();
+                                                          }
+
+                                                              match /circle_posts/{postId} { allow read, write: if isCircleMember(resource.data.circleId); }
+
+                                                                  match /circles/{circleId} {
+                                                                          allow list: if isSignedIn();
+                                                                                allow get: if isCircleMember(circleId);
+                                                                                      allow create: if isSignedIn();
+                                                                                            allow update: if isCircleAdmin(circleId) || isUser(resource.data.ownerId) || isSuperAdmin();
+                                                                                                  allow delete: if isUser(resource.data.ownerId) || isSuperAdmin();
+                                                                  }
+
+                                                                      match /standalone_articles/{articleId} {
+                                                                              allow list: if isSignedIn();
+                                                                                    allow get: if resource.data.visibility == 'public' || isUser(resource.data.ownerId);
+                                                                                          allow create: if isSignedIn();
+                                                                                                allow update, delete: if isUser(resource.data.ownerId) || isSuperAdmin();
+                                                                      }
+
+                                                                          match /citations/{docId} { allow read: if true; allow write: if isSignedIn(); }
+                                                                              match /quotes/{docId}    { allow read: if true; allow write: if isSignedIn(); }
+                                                                                  match /glossary_terms/{docId} { allow read: if true; allow write: if isSignedIn(); }
+
+                                                                                      match /book_categories/{docId} { allow read: if true; allow write: if isSuperAdmin(); }
+                                                                                          match /citation_categories/{docId} { allow read: if true; allow write: if isSuperAdmin(); }
+                                                                                              match /quote_categories/{docId} { allow read: if true; allow write: if isSuperAdmin(); }
+                                                                                                  match /glossary_categories/{docId} { allow read: if true; allow write: if isSuperAdmin(); }
+                                                                                                      match /standalone_article_categories/{docId} { allow read: if true; allow write: if isSuperAdmin(); }
+
+                                                                                                          match /email_otps/{docId} { allow read, write: if false; }
+                                                                                                              match /vaia_sessions/{docId} { allow read, write: if false; }
+                                                                                                                  match /super_admin_content/{docId} { allow read, write: if false; }
+
+                                                                                                                      match /todayStories/{storyId} {
+                                                                                                                              allow read: if true;
+                                                                                                                                    allow create: if isUser(request.resource.data.authorId);
+                                                                                                                                          allow update, delete: if isUser(resource.data.authorId);
+                                                                                                                      }
+
+                                                                                                                          match /layers/{layerId} { allow read, write, delete: if isUser(resource.data.userId); }
+
+                                                                                                                              // 🔹 NEW: Unique handle reservation (atomic, no queries needed)
+                                                                                                                                  match /reservedHandles/{handle} {
+                                                                                                                                          // claim: create if not exists, and bind to the caller's uid
+                                                                                                                                                allow create: if isSignedIn()
+                                                                                                                                                        && request.resource.data.uid == request.auth.uid
+                                                                                                                                                                && !exists(/databases/$(database)/documents/reservedHandles/$(handle));
+
+                                                                                                                                                                      // reads OK (or restrict further if needed)
+                                                                                                                                                                            allow read: if true;
+
+                                                                                                                                                                                  // no updates
+                                                                                                                                                                                        allow update: if false;
+
+                                                                                                                                                                                              // allow owner (or super admin) to free it
+                                                                                                                                                                                                    allow delete: if isSignedIn() && (resource.data.uid == request.auth.uid || isSuperAdmin());
+                                                                                                                                  }
+    }
+}
+
+                                                                                                                                  }
+                                                                                                                      }
+                                                                      }
+                                                                  }
+                                                          }
+                                                      }
+                                                  }
+                                              }
+                                  }
+                              }
+    }
+}

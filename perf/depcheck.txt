@@ -1,0 +1,11 @@
+Unused dependencies
+* @genkit-ai/firebase
+* wav
+Unused devDependencies
+* @types/wav
+* cross-env
+* rollup-plugin-visualizer
+* vite-plugin-inspect
+Missing dependencies
+* eslint-config-next: .\.eslintrc.cjs
+* server-only: .\src\app\genkit.ts

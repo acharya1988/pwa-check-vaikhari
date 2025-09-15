@@ -1,0 +1,255 @@
+[93m[4mUnused files[24m[39m (93)
+scripts/snapshot.mjs                                                 
+server/router.js                                                     
+server/server.js                                                     
+src/next.config.ts                                                   
+server/lib/auth.js                                                   
+server/lib/compress.js                                               
+server/lib/cookies.js                                                
+server/lib/firebaseAdmin.js                                          
+server/lib/http.js                                                   
+server/lib/mongo.js                                                  
+server/migrated/admin.db.inspect.get.js                              
+server/migrated/admin.roles.get.js                                   
+server/migrated/admin.roles.post.js                                  
+server/migrated/circles.id.posts.get.js                              
+server/migrated/profile.me.get.js                                    
+server/migrated/register.js                                          
+server/migrated/secure.get.js                                        
+src/actions/onboarding.actions.ts                                    
+src/actions/search.actions.ts                                        
+src/components/floating-widgets-pane.tsx                             
+src/components/language-switcher.tsx                                 
+src/components/matrix-background.tsx                                 
+src/components/search-container.tsx                                  
+src/components/theme-switcher.tsx                                    
+src/app/landing-page-client.tsx                                      
+src/hooks/use-theme.tsx                                              
+src/hooks/use-user-profile.tsx                                       
+src/modals/test.modals.ts                                            
+src/services/search.service.ts                                       
+src/components/admin/layout-client.tsx                               
+src/components/onboarding/profile-form.tsx                           
+src/components/profile/mobile-nav.tsx                                
+src/components/profile/people-browser.tsx                            
+src/components/profile/profile-actions-client.tsx                    
+src/components/profile/user-about.tsx                                
+src/components/social/create-circle-dialog.tsx                       
+src/components/ui/alert.tsx                                          
+src/components/ui/calendar.tsx                                       
+src/components/ui/carousel.tsx                                       
+src/components/ui/chart.tsx                                          
+src/components/ui/form.tsx                                           
+src/components/ui/loading-animation.tsx                              
+src/components/ui/menubar.tsx                                        
+src/app/admin/intellicite-panel.tsx                                  
+src/lib/db/mongoose.ts                                               
+src/lib/firebase/index.ts                                            
+src/components/admin/ai-training/tag-trainer-client.tsx              
+src/components/admin/citations/page.tsx                              
+src/components/admin/copilot/assistant-message.tsx                   
+src/components/admin/living-document/insight-panel.tsx               
+src/components/admin/messages/messages-client.tsx                    
+src/components/admin/my-layers/my-layers-client.tsx                  
+src/components/admin/organizations/organization-browser.tsx          
+src/components/admin/organizations/organization-designer.tsx         
+src/components/admin/profile/activity-post-card.tsx                  
+src/components/admin/profile/post-card.tsx                           
+src/components/admin/profile/profile-form.tsx                        
+src/components/admin/profile/profile-forms.tsx                       
+src/components/admin/profile/wall.tsx                                
+src/components/admin/quotes/page.tsx                                 
+src/components/admin/settings/organizations-tab.tsx                  
+src/components/admin/settings/profile-settings.tsx                   
+src/components/admin/super-admin/dashboard.tsx                       
+src/components/admin/super-admin/tag-trainer.tsx                     
+src/components/admin/super-admin/vaia-logger.tsx                     
+src/app/admin/editor/toolbar.tsx                                     
+src/app/admin/living-document/living-document-client.tsx             
+src/app/admin/living-document/living-document-sidebar.tsx            
+src/app/admin/messages/chintana-forum-client.tsx                     
+src/app/admin/organizations/organization-designer.tsx                
+src/app/admin/people/people-browser.tsx                              
+src/app/admin/profile/profile-actions-client.tsx                     
+src/app/admin/profile/profile-client-page.tsx                        
+src/app/admin/profile/user-bookshelf.tsx                             
+src/app/admin/profile/user-circles.tsx                               
+src/app/admin/profile/user-evolutions.tsx                            
+src/app/admin/profile/user-favorites.tsx                             
+usr/src/app/src/components/OrganizationOnePage.tsx                   
+usr/src/app/src/hooks/useAuthGuard.ts                                
+usr/src/app/src/services/organization.service.ts                     
+usr/src/app/src/services/user.service.ts                             
+src/components/admin/books/[bookId]/page.tsx                         
+src/components/admin/chintana/[threadId]/chintana-thread-client.tsx  
+usr/src/app/src/app/admin/layout-client.tsx                          
+usr/src/app/src/app/admin/layout.tsx                                 
+usr/src/app/src/components/admin/layout-client.tsx                   
+usr/src/app/src/components/admin/profile-forms.tsx                   
+src/components/admin/articles/edit/[articleId]/page.tsx              
+src/components/admin/articles/new/[type]/page.tsx                    
+usr/src/app/src/app/organizations/[id]/page.tsx                      
+usr/src/app/src/components/admin/copilot/copilot-sidebar.tsx         
+src/components/admin/books/[bookId]/new/[chapterId]/page.tsx         
+usr/src/app/src/app/admin/articles/new/[type]/page.tsx               
+[93m[4mUnused dependencies[24m[39m (9)
+@genkit-ai/firebase      package.json:24:6 
+@radix-ui/react-menubar  package.json:35:6 
+@types/mongodb           package.json:73:6 
+embla-carousel-react     package.json:78:6 
+mongoose                 package.json:88:6 
+next-themes              package.json:90:6 
+react-day-picker         package.json:96:6 
+react-hook-form          package.json:98:6 
+wav                      package.json:104:6
+[93m[4mUnused devDependencies[24m[39m (4)
+@types/marked             package.json:109:6
+@types/wav                package.json:114:6
+rollup-plugin-visualizer  package.json:120:6
+vite-plugin-inspect       package.json:124:6
+[93m[4mUnlisted dependencies[24m[39m (3)
+postcss              postcss.config.mjs
+postcss-load-config  postcss.config.mjs
+server-only          src/app/genkit.ts 
+[93m[4mUnresolved imports[24m[39m (8)
+eslint-config-next             .eslintrc.cjs                                              
+../ui/button                   src/components/admin/settings/general-settings-tab.tsx:10:9
+@/components/admin/book-forms  src/app/admin/books/[bookId]/[chapterId]/new/page.tsx:30:9 
+@/lib/data-service             src/components/article-comments.tsx:6:9                    
+@/lib/data-service             src/components/article-metadata-bar.tsx:12:14              
+@/lib/data-service             src/components/reader-header.tsx:5:9                       
+@/lib/data-service             src/components/bookmark-button.tsx:12:14                   
+@/lib/data-service             src/components/print-dialog.tsx:24:14                      
+[93m[4mUnused exports[24m[39m (80)
+upsertAndMapUser                 function  src/services/user.service.ts:26:23                      
+getUserProfileByUid              function  src/services/user.service.ts:45:23                      
+setMfaEnrolledAndPhone           function  src/services/user.service.ts:71:23                      
+AVAILABLE_SCRIPT_KEYS                      src/components/transliteration-provider.tsx:39:14       
+saveThemeAsDefault               function  src/services/theme.service.ts:42:23                     
+default                          variable  src/lib/firebase/config.ts:29:8                         
+reducer                                    src/hooks/use-toast.ts:78:14                            
+toast                                      src/hooks/use-toast.ts:195:19                           
+getOrganizations                 function  src/services/profile.service.ts:16:23                   
+getOrganization                  function  src/services/profile.service.ts:22:23                   
+getCircles                       function  src/services/profile.service.ts:107:23                  
+getThreadsForUser                function  src/services/chintana.service.ts:24:23                  
+getUserProfileByUidServer        function  src/services/user.server.ts:4:23                        
+getAllCitationKeywords           function  src/services/citation.service.ts:209:23                 
+EditCitationCategoryDialog       function  src/components/admin/citation-forms.tsx:101:17          
+badgeVariants                              src/components/ui/badge.tsx:43:16                       
+TableFooter                                src/components/ui/table.tsx:112:13                      
+TableCaption                               src/components/ui/table.tsx:116:13                      
+SelectSeparator                            src/components/ui/select.tsx:157:14                     
+SelectScrollUpButton                       src/components/ui/select.tsx:158:19                     
+SelectScrollDownButton                     src/components/ui/select.tsx:159:24                     
+AlertDialogPortal                          src/components/ui/alert-dialog.tsx:130:15               
+AlertDialogOverlay                         src/components/ui/alert-dialog.tsx:131:21               
+DialogPortal                               src/components/ui/dialog.tsx:111:10                     
+DialogOverlay                              src/components/ui/dialog.tsx:112:16                     
+suggestQuotesForArticle          function  src/services/quote.service.ts:102:23                    
+SUPPORTED_LANGUAGES                        src/components/language-provider.tsx:6:14               
+useLanguage                      function  src/components/language-provider.tsx:59:17              
+saveOrganizationProfile          function  src/services/organization.service.ts:50:23              
+default                                    src/components/OrganizationOnePage.tsx:39:8             
+deleteOrganization               function  src/actions/profile.actions.ts:306:23                   
+handleStandaloneArticleFeedback  function  src/actions/standalone-article.actions.ts:218:23        
+SheetPortal                                src/components/ui/sheet.tsx:130:9                       
+SheetOverlay                               src/components/ui/sheet.tsx:131:15                      
+SheetFooter                                src/components/ui/sheet.tsx:136:15                      
+SANSKRIT_COMMENTARY_TYPES                  src/types/sanskrit.types.ts:58:14                       
+AiVerseSegmentSchema                       src/types/import.types.ts:10:14                         
+AiChapterOutputSchema                      src/types/import.types.ts:16:14                         
+FinalSegmentSchema                         src/types/import.types.ts:30:14                         
+FinalChapterSchema                         src/types/import.types.ts:39:14                         
+getConversationsForCurrentUser   function  src/actions/message.actions.ts:14:23                    
+getMessages                      function  src/actions/message.actions.ts:19:23                    
+createNewAIChat                  function  src/actions/message.actions.ts:46:23                    
+addSparkAction                   function  src/actions/post.actions.ts:292:23                      
+toggleGlowAction                 function  src/actions/post.actions.ts:310:23                      
+runTagTrainingAction             function  src/actions/super-admin.actions.ts:41:23                
+OmIcon                           function  src/components/icons.tsx:3:17                           
+LanguageSwitcher                 function  src/components/script-switcher.tsx:44:17                
+DropdownMenuCheckboxItem                   src/components/ui/dropdown-menu.tsx:189:20              
+DropdownMenuRadioItem                      src/components/ui/dropdown-menu.tsx:190:28              
+DropdownMenuShortcut                       src/components/ui/dropdown-menu.tsx:193:25              
+DropdownMenuPortal                         src/components/ui/dropdown-menu.tsx:195:21              
+DropdownMenuSub                            src/components/ui/dropdown-menu.tsx:196:22              
+DropdownMenuSubContent                     src/components/ui/dropdown-menu.tsx:197:19              
+DropdownMenuSubTrigger                     src/components/ui/dropdown-menu.tsx:198:26              
+DropdownMenuRadioGroup                     src/components/ui/dropdown-menu.tsx:199:26              
+generateSanskritVariations       function  src/ai/flows/generate-sanskrit-variations.ts:51:23      
+translateToSanskrit              function  src/ai/flows/translate-to-sanskrit.ts:48:23             
+medhayuCopilot                   function  src/ai/flows/medhayu-copilot.ts:107:23                  
+ToastAction                                src/components/ui/toast.tsx:127:14                      
+writeJsonFile                    function  src/services/db.ts:26:23                                
+CheckGrammarInputSchema                    src/types/ai.types.ts:7:14                              
+CheckGrammarOutputSchema                   src/types/ai.types.ts:20:14                             
+EmailOtpInputSchema                        src/types/ai.types.ts:143:14                            
+VerifyOtpInputSchema                       src/types/ai.types.ts:147:14                            
+CommentaryInfoSchema                       src/types/misc.types.ts:13:14                           
+SparkSchema                                src/types/misc.types.ts:21:14                           
+LayerAnnotationSchema                      src/types/misc.types.ts:29:14                           
+PointLinkSchema                            src/types/misc.types.ts:45:14                           
+GlowSchema                                 src/types/misc.types.ts:60:14                           
+VAIKHARI_USER_ID                           src/types/user.types.ts:5:14                            
+workSchema                                 src/types/organization.types.ts:7:14                    
+personSchema                               src/types/organization.types.ts:19:14                   
+orgSchema                                  src/types/organization.types.ts:29:14                   
+citationSuggestionOptions                  src/components/admin/editor/tiptap-extensions.tsx:294:14
+quoteSuggestionOptions                     src/components/admin/editor/tiptap-extensions.tsx:508:14
+CommandDialog                              src/components/ui/command.tsx:147:11                    
+CommandSeparator                           src/components/ui/command.tsx:153:15                    
+CommandShortcut                            src/components/ui/command.tsx:154:20                    
+ToggleCopilotButton              function  src/components/admin/copilot/copilot-sidebar.tsx:24:17  
+[93m[4mUnused exported types[24m[39m (46)
+Role                              type       src/hooks/useAuthGuard.ts:8:13                    
+ButtonProps                       interface  src/components/ui/button.tsx:37:18                
+GroupedStandaloneArticle          interface  src/services/standalone-article.service.ts:109:18 
+HierarchicalSubCategory           interface  src/services/book.service.ts:158:18               
+HierarchicalCategory              interface  src/services/book.service.ts:161:18               
+TextareaProps                     interface  src/components/ui/textarea.tsx:6:18               
+InputProps                        interface  src/components/ui/input.tsx:6:18                  
+CircleRole                        type       src/app/admin/circles/circle-view.tsx:23:13       
+Circle                            interface  src/app/admin/circles/circle-view.tsx:25:18       
+PostType                          type       src/app/admin/circles/circle-view.tsx:41:13       
+Post                              interface  src/app/admin/circles/circle-view.tsx:53:18       
+Member                            interface  src/app/admin/circles/circle-view.tsx:71:18       
+PostStatus                        type       src/types/social.types.ts:6:13                    
+CitationParserResult              interface  src/actions/citation.actions.ts:201:18            
+GlossaryParserResult              interface  src/actions/glossary.actions.ts:84:18             
+VaiaCopilotInput                  type       src/ai/flows/vaia-copilot.ts:14:14                
+ExtractCitationsInput             type       src/ai/flows/extract-citations.ts:18:14           
+ExtractGlossaryTermsInput         type       src/ai/flows/extract-glossary-terms.ts:24:14      
+SearchQuotesContextuallyInput     type       src/ai/flows/search-quotes-contextually.ts:13:14  
+SearchQuotesContextuallyOutput    type       src/ai/flows/search-quotes-contextually.ts:13:45  
+TrainOnTagInput                   type       src/ai/flows/train-on-tag.ts:19:14                
+TrainOnTagOutput                  type       src/ai/flows/train-on-tag.ts:19:31                
+ComboboxOption                    interface  src/components/ui/creatable-combobox.tsx:24:18    
+TranslateTextInput                type       src/ai/flows/translate-text.ts:21:14              
+TranslateTextOutput               type       src/ai/flows/translate-text.ts:21:34              
+GenerateSanskritVariationsInput   type       src/ai/flows/generate-sanskrit-variations.ts:22:14
+GenerateSanskritVariationsOutput  type       src/ai/flows/generate-sanskrit-variations.ts:22:47
+SuggestCitationsForArticleInput   type       src/ai/flows/suggest-contextual-citations.ts:20:14
+SuggestCitationsForArticleOutput  type       src/ai/flows/suggest-contextual-citations.ts:29:13
+TranslateToSanskritInput          type       src/ai/flows/translate-to-sanskrit.ts:21:14       
+TranslateToSanskritOutput         type       src/ai/flows/translate-to-sanskrit.ts:21:40       
+VaiaCopilotInput                  type       src/ai/flows/medhayu-copilot.ts:14:14             
+CheckGrammarInput                 type       src/types/ai.types.ts:153:13                      
+CheckGrammarOutput                type       src/types/ai.types.ts:154:13                      
+EmailOtpInput                     type       src/types/ai.types.ts:175:13                      
+VerifyOtpInput                    type       src/types/ai.types.ts:176:13                      
+ArticleFeedback                   interface  src/types/book.types.ts:45:18                     
+GroupedBookByGenre                interface  src/types/book.types.ts:109:18                    
+CorpusEntry                       interface  src/types/misc.types.ts:5:18                      
+PointLink                         type       src/types/misc.types.ts:58:13                     
+VersionedText                     interface  src/types/misc.types.ts:86:18                     
+PrivacyPreferences                interface  src/types/user.types.ts:86:18                     
+UserPreferences                   interface  src/types/user.types.ts:99:18                     
+StoryBackground                   type       src/types/today.types.ts:6:13                     
+GenerateGlossaryFromProseInput    type       src/ai/flows/generate-glossary-from-prose.ts:20:14
+GenerateGlossaryFromProseOutput   type       src/ai/flows/generate-glossary-from-prose.ts:20:46
+[93m[4mDuplicate exports[24m[39m (3)
+OrganizationOnePageRenderer|default                                     src/components/OrganizationOnePage.tsx
+ExtractGlossaryTermsInputSchema|GenerateGlossaryFromProseInputSchema    src/types/ai.types.ts                 
+ExtractGlossaryTermsOutputSchema|GenerateGlossaryFromProseOutputSchema  src/types/ai.types.ts                 
+[33m[4mConfiguration hints[24m (1)[39m

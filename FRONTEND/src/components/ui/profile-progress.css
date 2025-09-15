@@ -1,0 +1,61 @@
+
+.progress-summary-profile-circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  color: hsl(var(--foreground));
+  border-radius: 50%;
+  font-size: 10px;
+  letter-spacing: .5px;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.progress-circle #background-circle {
+  stroke-width: 3;
+  stroke: hsl(var(--border));
+  fill: transparent !important;
+}
+
+.progress-circle #foreground-circle {
+  stroke-width: 3;
+  stroke: hsl(var(--primary));
+  stroke-dasharray: 251.2; /* 2 * PI * 40 */
+  stroke-dashoffset: 251.2;
+  fill: transparent !important;
+  transition: stroke-dashoffset 0.5s ease-out;
+}
+
+.progress-summary-profile-percent {
+  display: block;
+  font-size: 0.75rem; /* 12px */
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.progress-summary-profile-completed-icon {
+    display: none;
+}
+
+/* 100% complete styles */
+.progress-summary-profile-circle[data-progress="100"] .progress-summary-profile-percent {
+	display: none;
+}
+
+.progress-summary-profile-circle[data-progress="100"] .progress-summary-profile-completed-icon {
+    display: block;
+    color: hsl(var(--primary));
+}

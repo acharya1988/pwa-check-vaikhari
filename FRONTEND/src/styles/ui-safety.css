@@ -1,0 +1,37 @@
+/* Global, non-visual fixes for overflow & scroll. No color/spacing/typography changes. */
+:root {
+  /* keep layout stable when scrollbars appear */
+  scrollbar-gutter: stable both-edges;
+}
+
+/* Box sizing sanity */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Media should never overflow their container */
+img, video, canvas, svg { display: block; max-width: 100%; height: auto; }
+
+/* Long tokens/URLs should wrap instead of blowing layout */
+.u-wrap, .text-content, .prose, article, section, main {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Code blocks and preformatted text scroll horizontally instead of overflowing */
+pre, code, .code, .prose pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Tables: keep inside viewport on small screens */
+.table-wrap, .prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Flex/grid children are allowed to shrink to prevent overflow */
+.flex > *, .grid > * { min-width: 0; min-height: 0; }
+
+/* Prevent nested scroll traps unless explicitly set in a component */
+html, body, #root { min-height: 100%; }
+

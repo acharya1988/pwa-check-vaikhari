@@ -1,0 +1,497 @@
+\middleware.ts:6 - middleware
+\tailwind.config.ts:4 - default
+\src\next.config.ts:66 - default
+\.next\types\routes.d.ts:86 - ParamsOf
+\.next\types\routes.d.ts:102 - PageRoutes (used in module)
+\.next\types\routes.d.ts:102 - RedirectRoutes (used in module)
+\.next\types\routes.d.ts:102 - RewriteRoutes (used in module)
+\src\actions\citation.actions.ts:201 - CitationParserResult (used in module)
+\src\actions\glossary.actions.ts:84 - GlossaryParserResult (used in module)
+\src\actions\message.actions.ts:14 - getConversationsForCurrentUser
+\src\actions\message.actions.ts:19 - getMessages
+\src\actions\message.actions.ts:46 - createNewAIChat
+\src\actions\post.actions.ts:292 - addSparkAction
+\src\actions\post.actions.ts:310 - toggleGlowAction
+\src\app\landing-page-client.tsx:141 - LandingPageClient
+\src\components\floating-widgets-pane.tsx:167 - FloatingWidgetsPane
+\src\components\icons.tsx:3 - OmIcon
+\src\components\language-provider.tsx:59 - useLanguage
+\src\components\language-provider.tsx:6 - SUPPORTED_LANGUAGES (used in module)
+\src\components\language-switcher.tsx:7 - ScriptSwitcher
+\src\components\language-switcher.tsx:37 - LanguageSwitcher
+\src\components\matrix-background.tsx:5 - MatrixBackground
+\src\components\OrganizationOnePage.tsx:39 - default
+\src\components\script-switcher.tsx:44 - LanguageSwitcher
+\src\components\search-container.tsx:126 - SearchContainer
+\src\components\transliteration-provider.tsx:39 - AVAILABLE_SCRIPT_KEYS
+\src\hooks\use-toast.ts:78 - reducer (used in module)
+\src\hooks\use-toast.ts:195 - toast (used in module)
+\src\hooks\use-user-profile.tsx:13 - UserProfileProvider
+\src\hooks\use-user-profile.tsx:21 - useUserProfile
+\src\hooks\useAuthGuard.ts:8 - Role (used in module)
+\src\modals\test.modals.ts:4 - ITest (used in module)
+\src\modals\test.modals.ts:15 - default
+\src\services\book.service.ts:158 - HierarchicalSubCategory (used in module)
+\src\services\book.service.ts:161 - HierarchicalCategory (used in module)
+\src\services\chintana.service.ts:24 - getThreadsForUser
+\src\services\citation.service.ts:209 - getAllCitationKeywords
+\src\services\db.ts:26 - writeJsonFile
+\src\services\profile.service.ts:16 - getOrganizations
+\src\services\profile.service.ts:22 - getOrganization
+\src\services\profile.service.ts:107 - getCircles
+\src\services\quote.service.ts:102 - suggestQuotesForArticle
+\src\services\search.service.ts:14 - getFullCorpusForSearch (used in module)
+\src\services\search.service.ts:8 - CorpusEntry (used in module)
+\src\services\standalone-article.service.ts:109 - GroupedStandaloneArticle (used in module)
+\src\services\theme.service.ts:42 - saveThemeAsDefault
+\src\services\user.server.ts:4 - getUserProfileByUidServer
+\src\services\user.service.ts:26 - upsertAndMapUser
+\src\services\user.service.ts:45 - getUserProfileByUid
+\src\services\user.service.ts:71 - setMfaEnrolledAndPhone
+\src\types\index.ts:23 - ContentType (used in module)
+\src\types\index.ts:25 - SuperAdminContent
+\src\types\index.ts:39 - VaiaInteraction (used in module)
+\src\types\index.ts:44 - VaiaSession
+\src\types\index.ts:5 - VolumeInfo
+\src\types\index.ts:10 - BookCategory
+\src\types\index.ts:16 - Book
+\src\types\index.ts:32 - BookWithStats
+\src\types\index.ts:40 - StandaloneArticleCategory
+\src\types\index.ts:45 - ArticleFeedback
+\src\types\index.ts:55 - StandaloneArticle
+\src\types\index.ts:85 - NewBookData
+\src\types\index.ts:109 - GroupedBookByGenre
+\src\types\index.ts:115 - SeriesInfo
+\src\types\index.ts:120 - SeriesGroup
+\src\types\index.ts:127 - BookStructure
+\src\types\index.ts:132 - BookContent
+\src\types\index.ts:160 - Article
+\src\types\index.ts:173 - Chapter
+\src\types\index.ts:2 - Citation
+\src\types\index.ts:12 - CitationCategory
+\src\types\index.ts:2 - GlossaryTerm
+\src\types\index.ts:9 - GlossaryCategory
+\src\types\index.ts:5 - CorpusEntry
+\src\types\index.ts:13 - CommentaryInfoSchema
+\src\types\index.ts:19 - CommentaryInfo
+\src\types\index.ts:21 - SparkSchema
+\src\types\index.ts:27 - Spark
+\src\types\index.ts:29 - LayerAnnotationSchema
+\src\types\index.ts:43 - LayerAnnotation
+\src\types\index.ts:45 - PointLinkSchema
+\src\types\index.ts:58 - PointLink
+\src\types\index.ts:60 - GlowSchema
+\src\types\index.ts:64 - Glow
+\src\types\index.ts:66 - ContentBlockSchema
+\src\types\index.ts:78 - ContentBlock
+\src\types\index.ts:80 - LinkableArticle
+\src\types\index.ts:86 - VersionedText
+\src\types\index.ts:2 - Quote
+\src\types\index.ts:9 - QuoteCategory
+\src\types\index.ts:4 - BOOK_SUBJECTS
+\src\types\index.ts:16 - SANSKRIT_TEXT_TYPE_GROUPS
+\src\types\index.ts:58 - SANSKRIT_COMMENTARY_TYPES
+\src\types\index.ts:63 - SOURCE_TYPE_GROUPS
+\src\types\index.ts:68 - COMMENTARY_TYPE_GROUPS
+\src\types\index.ts:73 - ALL_SOURCE_TYPES
+\src\types\index.ts:74 - ALL_COMMENTARY_TYPES
+\src\types\index.ts:79 - getTypeLabelById
+\src\types\index.ts:84 - getSanskritLabelById
+\src\types\index.ts:89 - getIastLabelById
+\src\types\index.ts:5 - PostType
+\src\types\index.ts:6 - PostStatus
+\src\types\index.ts:7 - PostMethod
+\src\types\index.ts:9 - AttachedWork
+\src\types\index.ts:19 - Post
+\src\types\index.ts:51 - Comment
+\src\types\index.ts:5 - VAIKHARI_USER_ID
+\src\types\index.ts:6 - VAIKHARI_USER_PROFILE
+\src\types\index.ts:13 - PostAuthor
+\src\types\index.ts:20 - Education
+\src\types\index.ts:30 - Experience
+\src\types\index.ts:41 - Skill
+\src\types\index.ts:46 - Language
+\src\types\index.ts:51 - Publication
+\src\types\index.ts:59 - Award
+\src\types\index.ts:66 - Project
+\src\types\index.ts:73 - Association
+\src\types\index.ts:79 - Portfolio
+\src\types\index.ts:86 - PrivacyPreferences
+\src\types\index.ts:99 - UserPreferences
+\src\types\index.ts:125 - UserProfile
+\src\types\index.ts:179 - Bookmark
+\src\types\index.ts:201 - CircleMember
+\src\types\index.ts:208 - CircleRequest
+\src\types\index.ts:216 - Circle
+\src\types\index.ts:232 - Answer
+\src\types\index.ts:242 - Notification
+\src\types\index.ts:4 - DashboardStats
+\src\types\index.ts:4 - ParseBookTextInputSchema
+\src\types\index.ts:7 - ParseBookTextInput
+\src\types\index.ts:10 - AiVerseSegmentSchema
+\src\types\index.ts:16 - AiChapterOutputSchema
+\src\types\index.ts:21 - AiBookOutputSchema
+\src\types\index.ts:26 - AiBookOutput
+\src\types\index.ts:30 - FinalSegmentSchema
+\src\types\index.ts:39 - FinalChapterSchema
+\src\types\index.ts:47 - ParseBookTextOutputSchema
+\src\types\index.ts:52 - ParseBookTextOutput
+\src\types\index.ts:4 - ConversationParticipant
+\src\types\index.ts:10 - Conversation
+\src\types\index.ts:25 - Message
+\src\types\index.ts:5 - TaggedContent
+\src\types\index.ts:3 - StyleProperty
+\src\types\index.ts:15 - ThemeStyles
+\src\types\index.ts:34 - BookTheme
+\src\types\index.ts:7 - CheckGrammarInputSchema
+\src\types\index.ts:20 - CheckGrammarOutputSchema
+\src\types\index.ts:26 - ExtractCitationsInputSchema
+\src\types\index.ts:39 - ExtractCitationsOutputSchema
+\src\types\index.ts:44 - ExtractGlossaryTermsInputSchema
+\src\types\index.ts:54 - ExtractGlossaryTermsOutputSchema
+\src\types\index.ts:59 - GenerateGlossaryFromProseInputSchema
+\src\types\index.ts:60 - GenerateGlossaryFromProseOutputSchema
+\src\types\index.ts:63 - GenerateSanskritVariationsInputSchema
+\src\types\index.ts:66 - GenerateSanskritVariationsOutputSchema
+\src\types\index.ts:77 - SearchQuotesContextuallyInputSchema
+\src\types\index.ts:81 - SearchQuotesContextuallyOutputSchema
+\src\types\index.ts:86 - SuggestCitationsForArticleInputSchema
+\src\types\index.ts:94 - TrainOnTagInputSchema
+\src\types\index.ts:98 - TrainOnTagOutputSchema
+\src\types\index.ts:105 - TranslateTextInputSchema
+\src\types\index.ts:109 - TranslateTextOutputSchema
+\src\types\index.ts:114 - TranslateToSanskritInputSchema
+\src\types\index.ts:117 - TranslateToSanskritOutputSchema
+\src\types\index.ts:126 - VaiaCopilotInputSchema
+\src\types\index.ts:143 - EmailOtpInputSchema
+\src\types\index.ts:147 - VerifyOtpInputSchema
+\src\types\index.ts:153 - CheckGrammarInput
+\src\types\index.ts:154 - CheckGrammarOutput
+\src\types\index.ts:155 - ExtractCitationsInput
+\src\types\index.ts:156 - ExtractCitationsOutput
+\src\types\index.ts:157 - ExtractGlossaryTermsInput
+\src\types\index.ts:158 - ExtractGlossaryTermsOutput
+\src\types\index.ts:159 - GenerateGlossaryFromProseInput
+\src\types\index.ts:160 - GenerateGlossaryFromProseOutput
+\src\types\index.ts:161 - GenerateSanskritVariationsInput
+\src\types\index.ts:162 - GenerateSanskritVariationsOutput
+\src\types\index.ts:163 - SearchQuotesContextuallyInput
+\src\types\index.ts:164 - SearchQuotesContextuallyOutput
+\src\types\index.ts:165 - SuggestCitationsForArticleInput
+\src\types\index.ts:166 - TrainOnTagInput
+\src\types\index.ts:167 - TrainOnTagOutput
+\src\types\index.ts:168 - TranslateTextInput
+\src\types\index.ts:169 - TranslateTextOutput
+\src\types\index.ts:170 - TranslateToSanskritInput
+\src\types\index.ts:171 - TranslateToSanskritOutput
+\src\types\index.ts:172 - VaiaCopilotInput
+\src\types\index.ts:175 - EmailOtpInput
+\src\types\index.ts:176 - VerifyOtpInput
+\src\types\index.ts:7 - ChintanaCategory
+\src\types\index.ts:8 - ChintanaPostType
+\src\types\index.ts:10 - ChintanaPostReactions
+\src\types\index.ts:21 - ChintanaPost
+\src\types\index.ts:32 - ChintanaThread
+\src\types\index.ts:5 - StoryType
+\src\types\index.ts:6 - StoryBackground
+\src\types\index.ts:8 - TodayStoryStyle
+\src\types\index.ts:14 - TodayStory
+\src\types\index.ts:7 - workSchema
+\src\types\index.ts:16 - Work
+\src\types\index.ts:19 - personSchema
+\src\types\index.ts:26 - Person
+\src\types\index.ts:29 - orgSchema
+\src\types\index.ts:88 - OrgInput
+\src\types\index.ts:90 - Organization
+\src\types\index.ts:2 - Genre
+\src\types\index.ts:7 - Category
+\src\types\index.ts:13 - SubCategory
+\src\types\index.ts:19 - GENRES
+\src\types\index.ts:35 - CATEGORIES
+\src\types\index.ts:101 - SUB_CATEGORIES
+\.next\types\app\layout.ts:54 - PageProps
+\.next\types\app\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\page.ts:54 - PageProps (used in module)
+\.next\types\app\page.ts:58 - LayoutProps
+\src\ai\flows\generate-glossary-from-prose.ts:20 - GenerateGlossaryFromProseInput (used in module)
+\src\ai\flows\generate-glossary-from-prose.ts:20 - GenerateGlossaryFromProseOutput (used in module)
+\src\app\admin\intellicite-panel.tsx:556 - IntellicitePanel
+\src\components\admin\citation-forms.tsx:101 - EditCitationCategoryDialog (used in module)
+\src\components\admin\layout-client.tsx:103 - AdminLayoutClient
+\src\components\onboarding\profile-form.tsx:25 - ProfileForm
+\src\components\profile\mobile-nav.tsx:9 - MobileNav
+\src\components\profile\people-browser.tsx:166 - PeopleBrowser
+\src\components\profile\profile-actions-client.tsx:236 - ProfileActionsClient
+\src\components\profile\user-about.tsx:36 - UserAbout
+\src\components\social\create-circle-dialog.tsx:35 - CreateCircleDialog
+\src\components\ui\alert-dialog.tsx:131 - AlertDialogPortal (used in module)
+\src\components\ui\alert-dialog.tsx:132 - AlertDialogOverlay (used in module)
+\src\components\ui\alert.tsx:59 - Alert (used in module)
+\src\components\ui\alert.tsx:59 - AlertTitle (used in module)
+\src\components\ui\alert.tsx:59 - AlertDescription (used in module)
+\src\components\ui\badge.tsx:43 - badgeVariants (used in module)
+\src\components\ui\button.tsx:37 - ButtonProps (used in module)
+\src\components\ui\calendar.tsx:10 - CalendarProps (used in module)
+\src\components\ui\calendar.tsx:70 - Calendar (used in module)
+\src\components\ui\carousel.tsx:256 - CarouselApi (used in module)
+\src\components\ui\carousel.tsx:257 - Carousel (used in module)
+\src\components\ui\carousel.tsx:258 - CarouselContent (used in module)
+\src\components\ui\carousel.tsx:259 - CarouselItem (used in module)
+\src\components\ui\carousel.tsx:260 - CarouselPrevious (used in module)
+\src\components\ui\carousel.tsx:261 - CarouselNext (used in module)
+\src\components\ui\chart.tsx:11 - ChartConfig (used in module)
+\src\components\ui\chart.tsx:359 - ChartContainer (used in module)
+\src\components\ui\chart.tsx:360 - ChartTooltip (used in module)
+\src\components\ui\chart.tsx:361 - ChartTooltipContent (used in module)
+\src\components\ui\chart.tsx:362 - ChartLegend (used in module)
+\src\components\ui\chart.tsx:363 - ChartLegendContent (used in module)
+\src\components\ui\chart.tsx:364 - ChartStyle (used in module)
+\src\components\ui\command.tsx:148 - CommandDialog (used in module)
+\src\components\ui\command.tsx:154 - CommandSeparator (used in module)
+\src\components\ui\command.tsx:155 - CommandShortcut (used in module)
+\src\components\ui\creatable-combobox.tsx:24 - ComboboxOption (used in module)
+\src\components\ui\dialog.tsx:112 - DialogPortal (used in module)
+\src\components\ui\dialog.tsx:113 - DialogOverlay (used in module)
+\src\components\ui\dropdown-menu.tsx:190 - DropdownMenuCheckboxItem (used in module)
+\src\components\ui\dropdown-menu.tsx:191 - DropdownMenuRadioItem (used in module)
+\src\components\ui\dropdown-menu.tsx:194 - DropdownMenuShortcut (used in module)
+\src\components\ui\dropdown-menu.tsx:196 - DropdownMenuPortal (used in module)
+\src\components\ui\dropdown-menu.tsx:197 - DropdownMenuSub (used in module)
+\src\components\ui\dropdown-menu.tsx:198 - DropdownMenuSubContent (used in module)
+\src\components\ui\dropdown-menu.tsx:199 - DropdownMenuSubTrigger (used in module)
+\src\components\ui\dropdown-menu.tsx:200 - DropdownMenuRadioGroup (used in module)
+\src\components\ui\form.tsx:170 - useFormField (used in module)
+\src\components\ui\form.tsx:171 - Form (used in module)
+\src\components\ui\form.tsx:172 - FormItem (used in module)
+\src\components\ui\form.tsx:173 - FormLabel (used in module)
+\src\components\ui\form.tsx:174 - FormControl (used in module)
+\src\components\ui\form.tsx:175 - FormDescription (used in module)
+\src\components\ui\form.tsx:176 - FormMessage (used in module)
+\src\components\ui\form.tsx:177 - FormField (used in module)
+\src\components\ui\input.tsx:6 - InputProps (used in module)
+\src\components\ui\loading-animation.tsx:7 - LoadingAnimation
+\src\components\ui\menubar.tsx:240 - Menubar (used in module)
+\src\components\ui\menubar.tsx:241 - MenubarMenu (used in module)
+\src\components\ui\menubar.tsx:242 - MenubarTrigger (used in module)
+\src\components\ui\menubar.tsx:243 - MenubarContent (used in module)
+\src\components\ui\menubar.tsx:244 - MenubarItem (used in module)
+\src\components\ui\menubar.tsx:245 - MenubarSeparator (used in module)
+\src\components\ui\menubar.tsx:246 - MenubarLabel (used in module)
+\src\components\ui\menubar.tsx:247 - MenubarCheckboxItem (used in module)
+\src\components\ui\menubar.tsx:248 - MenubarRadioGroup (used in module)
+\src\components\ui\menubar.tsx:249 - MenubarRadioItem (used in module)
+\src\components\ui\menubar.tsx:250 - MenubarPortal (used in module)
+\src\components\ui\menubar.tsx:251 - MenubarSubContent (used in module)
+\src\components\ui\menubar.tsx:252 - MenubarSubTrigger (used in module)
+\src\components\ui\menubar.tsx:253 - MenubarGroup (used in module)
+\src\components\ui\menubar.tsx:254 - MenubarSub (used in module)
+\src\components\ui\menubar.tsx:255 - MenubarShortcut (used in module)
+\src\components\ui\select.tsx:158 - SelectSeparator (used in module)
+\src\components\ui\select.tsx:159 - SelectScrollUpButton (used in module)
+\src\components\ui\select.tsx:160 - SelectScrollDownButton (used in module)
+\src\components\ui\sheet.tsx:131 - SheetPortal (used in module)
+\src\components\ui\sheet.tsx:132 - SheetOverlay (used in module)
+\src\components\ui\sheet.tsx:137 - SheetFooter (used in module)
+\src\components\ui\table.tsx:113 - TableFooter (used in module)
+\src\components\ui\table.tsx:117 - TableCaption (used in module)
+\src\components\ui\textarea.tsx:6 - TextareaProps (used in module)
+\src\components\ui\toast.tsx:128 - ToastAction (used in module)
+\src\lib\firebase\config.ts:29 - default
+\src\lib\firebase\index.ts:2 - auth
+\src\lib\firebase\index.ts:2 - db
+\src\lib\firebase\index.ts:2 - storage
+\.next\types\app\(auth)\layout.ts:54 - PageProps
+\.next\types\app\(auth)\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\(social)\layout.ts:54 - PageProps
+\.next\types\app\(social)\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\admin\layout.ts:54 - PageProps
+\.next\types\app\admin\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\admin\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\page.ts:58 - LayoutProps
+\.next\types\app\articles\layout.ts:54 - PageProps
+\.next\types\app\articles\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\articles\page.ts:54 - PageProps (used in module)
+\.next\types\app\articles\page.ts:58 - LayoutProps
+\.next\types\app\bookmarks\page.ts:54 - PageProps (used in module)
+\.next\types\app\bookmarks\page.ts:58 - LayoutProps
+\.next\types\app\books\layout.ts:54 - PageProps
+\.next\types\app\books\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\evolutions\page.ts:54 - PageProps (used in module)
+\.next\types\app\evolutions\page.ts:58 - LayoutProps
+\src\app\admin\circles\circle-view.tsx:23 - CircleRole (used in module)
+\src\app\admin\circles\circle-view.tsx:25 - Circle (used in module)
+\src\app\admin\circles\circle-view.tsx:41 - PostType (used in module)
+\src\app\admin\circles\circle-view.tsx:53 - Post (used in module)
+\src\app\admin\circles\circle-view.tsx:71 - Member (used in module)
+\src\app\admin\editor\toolbar.tsx:32 - EditorToolbar
+\src\app\admin\living-document\living-document-client.tsx:54 - LivingDocumentClient
+\src\app\admin\living-document\living-document-sidebar.tsx:366 - LivingDocumentSidebar
+\src\app\admin\messages\chintana-forum-client.tsx:93 - MessagesClient
+\src\app\admin\organizations\organization-designer.tsx:114 - default
+\src\app\admin\people\people-browser.tsx:52 - default
+\src\app\admin\profile\profile-client-page.tsx:241 - ProfileClientPage
+\src\app\admin\profile\user-bookshelf.tsx:183 - UserBookshelf
+\src\app\admin\profile\user-circles.tsx:364 - UserCircles
+\src\app\admin\super-admin\layout.tsx:2 - default
+\src\components\admin\ai-training\tag-trainer-client.tsx:23 - TagTrainerClient
+\src\components\admin\citations\page.tsx:76 - default
+\src\components\admin\copilot\copilot-sidebar.tsx:24 - ToggleCopilotButton
+\src\components\admin\editor\tiptap-extensions.tsx:294 - citationSuggestionOptions (used in module)
+\src\components\admin\editor\tiptap-extensions.tsx:508 - quoteSuggestionOptions (used in module)
+\src\components\admin\living-document\insight-panel.tsx:449 - LivingDocumentSidebar
+\src\components\admin\messages\messages-client.tsx:281 - MessagesClient
+\src\components\admin\my-layers\my-layers-client.tsx:231 - MyLayersClient
+\src\components\admin\organizations\organization-browser.tsx:179 - OrganizationBrowser
+\src\components\admin\organizations\organization-designer.tsx:215 - default
+\src\components\admin\profile\activity-post-card.tsx:97 - ActivityPostCard
+\src\components\admin\profile\post-card.tsx:87 - UserEvolutions
+\src\components\admin\profile\profile-form.tsx:69 - ProfileForm
+\src\components\admin\profile\profile-forms.tsx:112 - ProfileImageUpdater
+\src\components\admin\profile\profile-forms.tsx:241 - CreateCircleDialog
+\src\components\admin\profile\profile-forms.tsx:354 - CreateOrganizationDialog
+\src\components\admin\profile\wall.tsx:15 - Wall
+\src\components\admin\quotes\page.tsx:9 - default
+\src\components\admin\settings\organizations-tab.tsx:42 - OrganizationsTab
+\src\components\admin\settings\profile-settings.tsx:99 - ProfileSettingsTab
+\src\components\admin\super-admin\dashboard.tsx:173 - SuperAdminDashboard
+\src\components\admin\super-admin\tag-trainer.tsx:57 - TagTrainerClient
+\src\components\admin\super-admin\vaia-logger.tsx:53 - VaiaLoggerClient
+\.next\types\app\(auth)\login\page.ts:54 - PageProps (used in module)
+\.next\types\app\(auth)\login\page.ts:58 - LayoutProps
+\.next\types\app\(auth)\signup\page.ts:54 - PageProps (used in module)
+\.next\types\app\(auth)\signup\page.ts:58 - LayoutProps
+\.next\types\app\(social)\drift\page.ts:54 - PageProps (used in module)
+\.next\types\app\(social)\drift\page.ts:58 - LayoutProps
+\.next\types\app\(social)\glow\page.ts:54 - PageProps (used in module)
+\.next\types\app\(social)\glow\page.ts:58 - LayoutProps
+\.next\types\app\(social)\wall\page.ts:54 - PageProps (used in module)
+\.next\types\app\(social)\wall\page.ts:58 - LayoutProps
+\.next\types\app\admin\activity\layout.ts:54 - PageProps
+\.next\types\app\admin\activity\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\admin\activity\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\activity\page.ts:58 - LayoutProps
+\.next\types\app\admin\articles\layout.ts:54 - PageProps
+\.next\types\app\admin\articles\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\admin\articles\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\articles\page.ts:58 - LayoutProps
+\.next\types\app\admin\books\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\books\page.ts:58 - LayoutProps
+\.next\types\app\admin\chintana\layout.ts:54 - PageProps
+\.next\types\app\admin\chintana\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\admin\chintana\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\chintana\page.ts:58 - LayoutProps
+\.next\types\app\admin\circles\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\circles\page.ts:58 - LayoutProps
+\.next\types\app\admin\citations\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\citations\page.ts:58 - LayoutProps
+\.next\types\app\admin\dashboard\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\dashboard\page.ts:58 - LayoutProps
+\.next\types\app\admin\glossary\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\glossary\page.ts:58 - LayoutProps
+\.next\types\app\admin\import\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\import\page.ts:58 - LayoutProps
+\.next\types\app\admin\library\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\library\page.ts:58 - LayoutProps
+\.next\types\app\admin\living-document\layout.ts:54 - PageProps
+\.next\types\app\admin\living-document\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\admin\living-document\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\living-document\page.ts:58 - LayoutProps
+\.next\types\app\admin\media\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\media\page.ts:58 - LayoutProps
+\.next\types\app\admin\messages\layout.ts:54 - PageProps
+\.next\types\app\admin\messages\layout.ts:58 - LayoutProps (used in module)
+\.next\types\app\admin\messages\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\messages\page.ts:58 - LayoutProps
+\.next\types\app\admin\my-evolutions\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\my-evolutions\page.ts:58 - LayoutProps
+\.next\types\app\admin\my-layers\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\my-layers\page.ts:58 - LayoutProps
+\.next\types\app\admin\my-notes\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\my-notes\page.ts:58 - LayoutProps
+\.next\types\app\admin\notifications\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\notifications\page.ts:58 - LayoutProps
+\.next\types\app\admin\organizations\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\organizations\page.ts:58 - LayoutProps
+\.next\types\app\admin\people\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\people\page.ts:58 - LayoutProps
+\.next\types\app\admin\profile\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\profile\page.ts:58 - LayoutProps
+\.next\types\app\admin\quotes\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\quotes\page.ts:58 - LayoutProps
+\.next\types\app\admin\settings\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\settings\page.ts:58 - LayoutProps
+\.next\types\app\admin\super-admin\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\super-admin\page.ts:58 - LayoutProps
+\.next\types\app\admin\transliteration\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\transliteration\page.ts:58 - LayoutProps
+\.next\types\app\api\me\route.ts:313 - PageProps
+\.next\types\app\api\me\route.ts:317 - LayoutProps
+\.next\types\app\api\secure\route.ts:313 - PageProps
+\.next\types\app\api\secure\route.ts:317 - LayoutProps
+\.next\types\app\api\session\route.ts:313 - PageProps
+\.next\types\app\api\session\route.ts:317 - LayoutProps
+\.next\types\app\articles\[...slug]\page.ts:54 - PageProps (used in module)
+\.next\types\app\articles\[...slug]\page.ts:58 - LayoutProps
+\.next\types\app\auth\login\page.ts:54 - PageProps (used in module)
+\.next\types\app\auth\login\page.ts:58 - LayoutProps
+\.next\types\app\books\[bookId]\page.ts:54 - PageProps (used in module)
+\.next\types\app\books\[bookId]\page.ts:58 - LayoutProps
+\.next\types\app\organizations\[id]\page.ts:54 - PageProps (used in module)
+\.next\types\app\organizations\[id]\page.ts:58 - LayoutProps
+\src\components\admin\books\[bookId]\page.tsx:578 - default
+\src\components\admin\chintana\[threadId]\chintana-thread-client.tsx:111 - ChintanaThreadClient
+\.next\types\app\(auth)\onboarding\mfa\page.ts:54 - PageProps (used in module)
+\.next\types\app\(auth)\onboarding\mfa\page.ts:58 - LayoutProps
+\.next\types\app\(auth)\onboarding\profile\page.ts:54 - PageProps (used in module)
+\.next\types\app\(auth)\onboarding\profile\page.ts:58 - LayoutProps
+\.next\types\app\admin\auth\login\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\auth\login\page.ts:58 - LayoutProps
+\.next\types\app\admin\books\[bookId]\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\books\[bookId]\page.ts:58 - LayoutProps
+\.next\types\app\admin\chintana\[threadId]\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\chintana\[threadId]\page.ts:58 - LayoutProps
+\.next\types\app\admin\circles\[id]\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\circles\[id]\page.ts:58 - LayoutProps
+\.next\types\app\admin\citations\[categoryId]\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\citations\[categoryId]\page.ts:58 - LayoutProps
+\.next\types\app\admin\glossary\import\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\glossary\import\page.ts:58 - LayoutProps
+\.next\types\app\admin\onboarding\mfa\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\onboarding\mfa\page.ts:58 - LayoutProps
+\.next\types\app\admin\onboarding\profile\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\onboarding\profile\page.ts:58 - LayoutProps
+\.next\types\app\admin\organizations\organization-designer\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\organizations\organization-designer\page.ts:58 - LayoutProps
+\.next\types\app\admin\profile\[userId]\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\profile\[userId]\page.ts:58 - LayoutProps
+\.next\types\app\admin\super-admin\institutions\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\super-admin\institutions\page.ts:58 - LayoutProps
+\.next\types\app\admin\super-admin\user-management\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\super-admin\user-management\page.ts:58 - LayoutProps
+\.next\types\app\api\admin\roles\route.ts:313 - PageProps
+\.next\types\app\api\admin\roles\route.ts:317 - LayoutProps
+\.next\types\app\api\genkit\[...slug]\route.ts:313 - PageProps
+\.next\types\app\api\genkit\[...slug]\route.ts:317 - LayoutProps
+\.next\types\app\api\profile\me\route.ts:313 - PageProps
+\.next\types\app\api\profile\me\route.ts:317 - LayoutProps
+\src\components\admin\articles\edit\[articleId]\page.tsx:232 - default
+\src\components\admin\articles\new\[type]\page.tsx:308 - default
+\.next\types\app\(social)\wall\qa\[postId]\page.ts:54 - PageProps (used in module)
+\.next\types\app\(social)\wall\qa\[postId]\page.ts:58 - LayoutProps
+\.next\types\app\admin\articles\edit\[articleId]\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\articles\edit\[articleId]\page.ts:58 - LayoutProps
+\.next\types\app\admin\articles\new\[type]\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\articles\new\[type]\page.ts:58 - LayoutProps
+\.next\types\app\admin\books\[bookId]\theme\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\books\[bookId]\theme\page.ts:58 - LayoutProps
+\.next\types\app\api\admin\db\inspect\route.ts:313 - PageProps
+\.next\types\app\api\admin\db\inspect\route.ts:317 - LayoutProps
+\.next\types\app\api\circles\[id]\posts\route.ts:313 - PageProps
+\.next\types\app\api\circles\[id]\posts\route.ts:317 - LayoutProps
+\src\components\admin\books\[bookId]\new\[chapterId]\page.tsx:59 - default
+\.next\types\app\admin\books\[bookId]\[chapterId]\new\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\books\[bookId]\[chapterId]\new\page.ts:58 - LayoutProps
+\.next\types\app\admin\books\[bookId]\new\[chapterId]\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\books\[bookId]\new\[chapterId]\page.ts:58 - LayoutProps
+\.next\types\app\admin\books\[bookId]\edit\[chapterId]\[verse]\page.ts:54 - PageProps (used in module)
+\.next\types\app\admin\books\[bookId]\edit\[chapterId]\[verse]\page.ts:58 - LayoutProps

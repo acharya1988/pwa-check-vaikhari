@@ -1,0 +1,89 @@
+
+> vaikhari@0.1.0 analyze:bundle
+> cross-env ANALYZE=1 next build
+
+   ▲ Next.js 15.5.2
+   - Environments: .env
+
+   Creating an optimized production build ...
+[1mWebpack Bundle Analyzer[22m saved report to [1mD:\VAIKHARI -MONGO TRY\VAIKHARI\.next\analyze\nodejs.html[22m
+
+No bundles were parsed. Analyzer will show only original module sizes from stats file.
+
+[1mWebpack Bundle Analyzer[22m saved report to [1mD:\VAIKHARI -MONGO TRY\VAIKHARI\.next\analyze\edge.html[22m
+Failed to compile.
+
+./src/components/admin/settings/general-settings-tab.tsx
+Module not found: Can't resolve '../ui/button'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+./src/app/admin/settings/page.tsx
+
+./src/components/admin/settings/profile-settings-tab.tsx
+Error:   [31mx[0m Expected '</', got 'string literal (><RadioGroupItem value=, "><RadioGroupItem value=")'
+     ,-[[36;1;4mD:\VAIKHARI -MONGO TRY\VAIKHARI\src\components\admin\settings\profile-settings-tab.tsx[0m:363:1]
+ [2m360[0m |                                         <RadioGroup name="privacy.resumeDownload" defaultValue={privacyPrefs?.resumeDownload || 'followers'} className="space-y-2 mt-2 p-4 border rounded-lg">
+ [2m361[0m |                                         <div className="flex items-center space-x-2"><RadioGroupItem value="public" id="rd-pub" /><Label htmlFor="rd-pub">Anyone</Label></div>
+ [2m362[0m |                                         <div className="flex items-center space-x-2"><RadioGroupItem value="followers" id="rd-fol" /><Label htmlFor="rd-fol`}>Followers Only</Label></div>
+ [2m363[0m |                                         <div className="flex items-center space-x-2"><RadioGroupItem value="private" id="rd-pri" /><Label htmlFor="rd-pri">Only Me</Label></div>
+     : [35;1m                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+ [2m364[0m |                                     </RadioGroup>
+ [2m365[0m |                                 </div>
+ [2m365[0m |                             </CardContent>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/admin/settings/profile-settings-tab.tsx
+./src/app/admin/settings/page.tsx
+
+./src/app/genkit-init.ts
+Module parse failed: Top-level-await is only supported in EcmaScript Modules
+File was processed with these loaders:
+ * ./node_modules/next/dist/build/webpack/loaders/next-flight-loader/index.js
+ * ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js
+You may need an additional loader to handle the result of these loaders.
+Error: Top-level-await is only supported in EcmaScript Modules
+    at D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:790502
+    at Hook.eval [as call] (eval at create (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:14:9002), <anonymous>:7:16)
+    at Hook.CALL_DELEGATE [as _call] (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:14:6272)
+    at JavascriptParser.walkAwaitExpression (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1021746)
+    at JavascriptParser.walkExpression (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1020429)
+    at JavascriptParser.walkExpressionStatement (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1008977)
+    at JavascriptParser.walkStatement (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1007858)
+    at JavascriptParser.walkStatements (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1005683)
+    at D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1008924
+    at JavascriptParser.inBlockScope (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1032829)
+    at JavascriptParser.walkBlockStatement (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1008806)
+    at JavascriptParser.walkStatement (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1007539)
+    at JavascriptParser.walkNestedStatement (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1008706)
+    at JavascriptParser.walkIfStatement (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1009225)
+    at JavascriptParser.walkStatement (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1008136)
+    at JavascriptParser.walkStatements (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1005683)
+    at JavascriptParser.parse (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:1036500)
+    at D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:411905
+    at processResult (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:407859)
+    at D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\webpack\bundle5.js:29:408881
+    at D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:8727
+    at iterateNormalLoaders (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:5565)
+    at iterateNormalLoaders (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:5650)
+    at D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:5879
+    at r.callback (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:4039)
+    at Object.transformSource (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\build\webpack\loaders\next-flight-loader\index.js:191:10)
+    at LOADER_EXECUTION (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:4134)
+    at runSyncOrAsync (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:4145)
+    at iterateNormalLoaders (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:5782)
+    at D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:5142
+    at r.callback (D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:4039)
+    at D:\VAIKHARI -MONGO TRY\VAIKHARI\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js:224:23
+
+Import trace for requested module:
+./src/app/genkit-init.ts
+./src/app/api/genkit/[...slug]/route.ts
+
+
+> Build failed because of webpack errors

@@ -1,0 +1,41 @@
+
+@property --rotate-x {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --rotate-y {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.book-card-container {
+    perspective: 1000px;
+}
+
+.book-card {
+    transition: transform 0.8s, --rotate-x 0.8s, --rotate-y 0.8s;
+    transform: rotateX(var(--rotate-x)) rotateY(var(--rotate-y));
+    transform-style: preserve-3d;
+}
+
+.book-card-container:hover .book-card {
+    transform: rotateX(var(--rotate-x)) rotateY(var(--rotate-y)) translateZ(20px);
+}
+
+.book-card-cover {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: var(--radius);
+    overflow: hidden;
+    transform: translateZ(20px);
+}
+
+.book-card-content {
+    background-color: hsl(var(--card));
+    border-radius: var(--radius);
+    overflow: hidden;
+}

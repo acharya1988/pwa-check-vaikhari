@@ -1,0 +1,16 @@
+{
+  "name": "vaikhari-node-core",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "NODE_ENV=development node server.js",
+    "health": "curl -i http://localhost:${PORT:-4000}/healthz"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.6.0",
+    "mongodb": "^6.7.0"
+  }
+}
+

@@ -1,0 +1,19 @@
+
+.vk-today-composer {
+    --composer-border: hsl(var(--border));
+    --composer-bg: hsl(var(--background));
+    --composer-text: hsl(var(--foreground));
+    --composer-muted-text: hsl(var(--muted-foreground));
+    --composer-input-bg: hsl(var(--input));
+    --composer-primary: hsl(var(--primary));
+}
+
+.dark .vk-today-composer {
+    --composer-border: hsl(var(--border));
+    --composer-bg: hsl(var(--background));
+    --composer-text: hsl(var(--foreground));
+    --composer-muted-text: hsl(var(--muted-foreground));
+    --composer-input-bg: hsl(var(--input));
+    --composer-primary: hsl(var(--primary));
+}
+

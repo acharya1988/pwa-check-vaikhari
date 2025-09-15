@@ -1,0 +1,96 @@
+
+.vk-today-bar {
+    @apply relative;
+}
+
+.vk-today-ring {
+    @apply relative h-32 w-20 flex-shrink-0 cursor-pointer;
+}
+
+.vk-today-ring__bg {
+    @apply absolute inset-0 rounded-lg transition-transform duration-300;
+}
+
+.vk-today-ring:hover .vk-today-ring__bg {
+    transform: scale(1.05);
+}
+
+.vk-today-ring__border {
+    @apply absolute inset-0.5 rounded-lg border-2 border-background;
+}
+
+.vk-today-ring__content {
+    @apply relative h-full w-full rounded-lg bg-muted overflow-hidden flex items-center justify-center;
+}
+
+.vk-today-ring__image {
+    @apply h-full w-full object-cover;
+}
+
+.vk-today-ring__emoji {
+    @apply absolute top-1 left-1 h-6 w-6 rounded-full border-2 border-background flex items-center justify-center bg-card shadow-md;
+}
+
+.vk-today-ring__text {
+    @apply absolute bottom-2 left-2 right-2 text-xs font-bold text-white truncate text-center p-1;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Viewer */
+.vk-today-viewer {
+    @apply fixed inset-0 z-[100] bg-black/80 backdrop-blur-md flex items-center justify-center p-4;
+}
+
+.vk-today-viewer__content {
+    @apply relative h-full w-full max-w-md max-h-[85vh] rounded-2xl overflow-hidden shadow-2xl flex flex-col;
+}
+
+.vk-today-viewer__story-area {
+    @apply flex-1 relative;
+}
+
+.vk-today-viewer__story-card {
+    @apply absolute inset-0 w-full h-full flex items-center justify-center p-8;
+}
+
+.vk-today-viewer__bg {
+    @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.vk-today-viewer__text-content {
+    @apply relative z-10 text-center text-white font-headline text-3xl md:text-4xl leading-tight;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+.vk-today-viewer__progress-bar {
+    @apply absolute top-2 left-2 right-2 h-1 bg-white/30 rounded-full overflow-hidden;
+}
+
+.vk-today-viewer__progress-indicator {
+    @apply h-full bg-white transition-all duration-100 ease-linear;
+}
+
+.vk-today-viewer__nav {
+    @apply absolute top-1/2 -translate-y-1/2 h-full w-1/3 z-20;
+}
+
+.vk-today-viewer__header {
+    @apply absolute top-4 left-4 right-4 z-20 flex items-center justify-between;
+}
+
+.vk-today-viewer__author {
+    @apply flex items-center gap-2;
+}
+
+.vk-today-viewer__author-name {
+    @apply text-white text-sm font-semibold;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.vk-today-viewer__context-box {
+    @apply p-4 bg-background/80 backdrop-blur-sm text-sm border-t border-border/50;
+}
+
+.vk-today-viewer__actions {
+    @apply flex items-center gap-2;
+}

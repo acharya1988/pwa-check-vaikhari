@@ -1,0 +1,20 @@
+{
+  "name": "vaikhari-workspace",
+  "private": true,
+  "workspaces": [
+    "FRONTEND",
+    "BACKEND"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n FE,BE -c green,blue \"npm:dev --workspace FRONTEND\" \"npm:dev --workspace BACKEND\"",
+    "build": "npm run build --workspace BACKEND && npm run build --workspace FRONTEND",
+    "start": "concurrently -k -n FE,BE -c green,blue \"npm:start --workspace BACKEND\" \"npm:start --workspace FRONTEND\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "next-pwa": "^5.6.0",
+    "workbox-window": "^7.3.0"
+  }
+}

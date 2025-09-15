@@ -1,0 +1,44 @@
+{
+  "cold": {
+    "url": "http://127.0.0.1:4000/healthz",
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": "true",
+      "access-control-allow-headers": "Content-Type, Authorization",
+      "access-control-allow-methods": "GET,POST,PUT,PATCH,DELETE,OPTIONS",
+      "access-control-allow-origin": "http://localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "11",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Sat, 06 Sep 2025 08:27:36 GMT",
+      "keep-alive": "timeout=5",
+      "vary": "Origin"
+    },
+    "bytes": 11,
+    "ms": 3,
+    "body": {
+      "ok": true
+    }
+  },
+  "warm": {
+    "url": "http://127.0.0.1:4000/healthz",
+    "status": 200,
+    "headers": {
+      "access-control-allow-credentials": "true",
+      "access-control-allow-headers": "Content-Type, Authorization",
+      "access-control-allow-methods": "GET,POST,PUT,PATCH,DELETE,OPTIONS",
+      "access-control-allow-origin": "http://localhost:3000",
+      "connection": "keep-alive",
+      "content-length": "11",
+      "content-type": "application/json; charset=utf-8",
+      "date": "Sat, 06 Sep 2025 08:27:36 GMT",
+      "keep-alive": "timeout=5",
+      "vary": "Origin"
+    },
+    "bytes": 11,
+    "ms": 2,
+    "body": {
+      "ok": true
+    }
+  }
+}
